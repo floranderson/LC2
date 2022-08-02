@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablas de superheroes</title>
+        <style>
+            table,
+            td,
+            th{
+                border: 1px;
+                border-style: hidden;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            table{
+                width: 100%;
+            }
+            tfoot{
+                font-style: italic;
+                background-color: lightgray;
+            }
+            thead{
+                background-color: cadetblue;
+            }
+            caption{
+                font-size: large;
+                border-style: solid;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+       <table>
+            <caption>Tabla Simple</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>DNI</th>
+                    <th>teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Bruce</th>
+                    <th>Wane</th>
+                    <th>32564789</th>
+                    <th>+54 341 5698789</th>
+                </tr>
+                <tr>
+                    <th>Peter</th>
+                    <th>Parker</th>
+                    <th>40234567</th>
+                    <th>+54 341 5123123</th>
+                </tr>
+            </tbody>
+       </table>
+
+       <br>
+       <table>
+        <caption>Tabla Compleja</caption>
+        <thead>
+            <tr>
+                <th>Universo</th>
+                <th colspan="2">Nombre y apellido</th>
+                <th>DNI</th>
+                <th>teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>DC</th>
+                <th>Bruce</th>
+                <th>Wane</th>
+                <th>32564789</th>
+                <th> <a href="tel:+543415698789">+54 341 5698789</a></th>
+            </tr>
+            <tr>
+                <th rowspan="2">Marvel</th>
+                <th row>Peter</th>
+                <th>Parker</th>
+                <th>40234567</th>
+                <th><a href="tel:+543415123123">+54 341 5123123</a></th>
+            </tr>
+            <tr>
+                <th>Bruce</th>
+                <th>Banner</th>
+                <th>40212367</th>
+                <th><a href="tel:+543415345123">+54 341 5345123</a></th>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Cantidad </th>
+                    <th>3 </th>
+                   
+                </tr>
+            </tfoot>
+        </tbody>
+   </table>
+
+    </body>
+</html>
