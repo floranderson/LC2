@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Hola mundo!</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="multimedia.html">Multimedia</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <h1>Formulario de Contacto</h1>
+            <section>
+                <form action="/action_page.php" autocomplete="on">
+
+                    <table>
+                        <tr>
+                            <td><label for="name">Nombre completo</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Ingrese Nombre completo"
+                                    required /> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="email">E-mail</label>
+                            </td>
+                            <td> <input type="text" id="email" name="email" placeholder="Ingrese e-mail" required />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="age">Edad</label></td>
+                            <td><input type="number" id="age" name="age" placeholder="Ingrese edad" /></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="color">Color preferido</label></td>
+                            <td> <input type="color" id="color" name="color" /></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="comments">Comentarios</label></td>
+                            <td> <textarea name="commments" rows="5" cols="60" minlength="10" required></textarea> <br>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <br><br>
+                    <input type="submit" value="Enviar" /><br><br>
+                </form>
+            </section>
+            <section>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=UTN%20FRRO,%20ROSARIO&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps iframe embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© cop
+</body>
+
+</html>

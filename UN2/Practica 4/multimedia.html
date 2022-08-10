@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Hola mundo!</h1>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="multimedia.html">Multimedia</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h1>iframe</h1>
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h1>Video</h1>
+                <video width="320" height="240" controls>
+                    <source src="media/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h1>Imagen</h1>
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/img_pink_flowers.jpg">
+                    <source media="(min-width:465px)" srcset="img/img_white_flower.jpg">
+                    <img src= "img/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+                <h1>Audio</h1>
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="media/harry.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© cop
+</body>
+
+</html>
