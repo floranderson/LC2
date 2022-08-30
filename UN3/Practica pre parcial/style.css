@@ -1,6 +1,3 @@
-
-
-
 html {
     box-sizing: border-box;
 }
@@ -45,22 +42,13 @@ nav {
 
 }
 
+.nav-item{
+    display:inline-flex;
+}
+
 .nav-item a {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 15px;
     text-decoration: none;
     color: #fff;
-}
-
-.nav-item:hover {
-    background-color: rgb(231, 217, 236);
-}
-
-.nav-item:hover a {
-    color: rgb(89, 10, 168)
-}
-
-.nav-item:nth-of-type(4) {
-
-    font-weight: bold;
 }
