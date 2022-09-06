@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+
+    <h2>HTML Forms</h2>
+
+    <label for="number1">Numero1:</label><br>
+    <input type="number" id="number1" class="nmbr" value="1"><br>
+    <label for="number2">Numero2:</label><br>
+    <input type="number" id="number2" class="nmbr" value="2"><br><br>
+    <label for="number3">Numero3:</label><br>
+    <input type="number" id="number3" class="nmbr" value="3"><br><br>
+    <button onclick="calculaMayor()">CalcularMayor</button>
+
+    <script>
+        function calculaMayor() {
+            let elementos = document.getElementsByClassName('nmbr');
+            let mayor=elementos[0].value;
+            for(let elemento of elementos)
+            {
+                if(elemento.value>mayor)
+                {
+                    mayor=elemento.value
+                }
+            }
+            
+        window.alert('mayor es: '+mayor);
+        }
+    </script>
+
+</body>
+
+</html>
