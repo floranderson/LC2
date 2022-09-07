@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+    <button onclick="setPerson()">Ingresar Persona</button>
+
+    <p id="firstName"></p>
+    <p id="lastName"></p>
+    <p id="address"></p>
+    <p id="course"></p>
+    <p id="carreer"></p>
+    <p id="subject"></p>
+
+    <script>
+        function setPerson() {
+            let firstName = prompt("Ingrese nombre", "Harry");
+            showPerson('firstName', 'Nombre: ', firstName);
+
+            let lastName = prompt("Ingrese apellido", "Potter");
+            showPerson('lastName', 'Apellido: ', lastName);
+
+            let address = prompt("Ingrese domicilio", "Salta 123, Rosario, Santa Fe");
+            showPerson('address', 'Domicilio: ', address);
+
+            let course = prompt("Ingrese curso", "303");
+            showPerson('course', 'Curso: ', course);
+
+            let carreer = prompt("Ingrese carrera", "TUP");
+            showPerson('carreer', 'Carrera: ', carreer);
+            
+            let subject = prompt("Ingrese materia", "LC2");
+            showPerson('subject', 'Materia: ', subject)
+
+
+        }
+
+        function showPerson(id, label, value) {
+            
+            if (value != null) {
+                document.getElementById(id).innerHTML =
+                    label + value;
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

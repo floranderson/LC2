@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h2>HTML Forms</h2>
+
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" value="Pepe"><br>
+    <label for="questionQuantity">Cantidad de preguntas:</label><br>
+    <input type="number" id="questionQuantity" value="10"><br><br>
+    <label for="CorrectQantity">Cantidad de correctas:</label><br>
+    <input type="number" id="CorrectQantity" value="9"><br><br>
+    <button onclick="calculaNivel()">CalcularMayor</button>
+
+    <script>
+        function calculaNivel() {
+            let questionQuantity = Number(document.getElementById('questionQuantity').value);
+            let correctQuantity = Number(document.getElementById('CorrectQantity').value);
+            let percentage = correctQuantity / questionQuantity * 100;
+            console.log(percentage);
+            switch (true) {
+                case (percentage >= 90):
+                    window.alert("Nivel superior");
+                    break;
+                case (percentage >= 75): window.alert("Nivel medio");
+                    break;
+                case (percentage >= 50): window.alert("Nivel regular");
+                    break;
+                default:
+                    window.alert("Fuera de nivel");
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
