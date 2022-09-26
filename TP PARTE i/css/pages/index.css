@@ -1,0 +1,10 @@
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    }
+
+#section-weather-result{
+    display: static;
+}
